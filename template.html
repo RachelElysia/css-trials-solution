@@ -6,77 +6,37 @@
       body {
         margin: 0;
       }
-
-      .inline {
-        display: inline-block;
-      }
-      
-      .box {
+      #bg {
         background-color: #cccccc;
-        width: 100px;
-        height: 100px;
-        margin: 6px;
-        margin-right: 0;
-        height: 118px;
+        margin: auto;
+        width: 900px;
+        height: 200px;
+        padding: 15px 10px;
+        justify-items: auto;
       }
-
-      .box-1 {
-        width: 192px;
+      .common {
+        width: 180px;
+        height: 180px;
+        border-width: 10px;
+        fill: none;
+        display: inline-block;
+        justify-items: auto;
       }
-
-      .top {
-        vertical-align: top;
+      #shape1 {
+        border-style: double;
       }
-
-      .box-2 {
-        height: 100px;
-        width: 142.5px;
-      }
-
-      .box-3 {
-        height: 75px;
-        width: 142.5px;
-      }
-
-      #box-4 {
-        height: 35px;
-      }
-
-      #box-5 {
-      }
-
-      .bottom {
-        vertical-align: bottom;
-        width: 291px;
-      }
-
-      #dark-grey {
-        background-color: #555555;
-        width: 600px;
-        height: 130px;
-        margin: 10px;
+      #shape2 {
+        border-style: dotted;
+        border-radius: 50%;
+        margin: 0 150px;
       }
 
     </style>
   </head>
 
   <body>
-    <h1>AAAAAHHHHH</h1>
-    <!--row 1-->
-
-    <div id="dark-grey">
-      <div class="box-1 box inline"></div><div class="box-1 box inline"></div><div class="box-1 box inline"></div>
-    </div>
-
-
-    <!--row 2-->
-    <div id="dark-grey">
-      <div class="box-2 box inline top"></div><div class="box-3 box inline top"></div><div class="box-2 box inline top"></div><div class="box-3 box inline top"></div>
-    </div>
-
-    <!--row 3-->
-    <div id="dark-grey">
-      <div id="box-4" class="box inline bottom"></div><div id="box-5" class="box inline bottom"></div>
+    <div id="bg">
+      <div class="common" id="shape1"></div><div class="common" id="shape2"></div><div class="common" id="shape1"></div>
     </div>
 
   </body>
