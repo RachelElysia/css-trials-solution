@@ -7,8 +7,11 @@
         margin: 0;
       }
 
-      .box {
+      .inline {
         display: inline-block;
+      }
+      
+      .box {
         background-color: black;
         width: 100px;
         height: 100px;
@@ -39,13 +42,12 @@
   </head>
 
   <body>
-    <div id="red">
-      <div id="box-1" class="box"></div>
-      <div id="box-2" class="box"></div>
-    </div>
-    <div id="blue">
-      <div id="box-1" class="box"></div>
-      <div id="box-2" class="box"></div>
+    <div id="red" class="inline">
+      <div id="box-1" class="box inline"></div>
+      <div id="box-2" class="box inline"></div>
+    </div><div id="blue" class="inline">
+      <div id="box-1" class="box inline"></div>
+      <div id="box-2" class="box inline"></div>
     </div>
 
   </body>
